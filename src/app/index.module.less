@@ -1,0 +1,75 @@
+.box {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 300px;
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0 0 10px #d3d3d3;
+
+    .title {
+        margin: 10px 0;
+        font-weight: bold;
+    }
+
+    .titleContent {
+        padding-left: 10px;
+    }
+
+    .content {
+        border-radius: 10px;
+        margin-top: 10px;
+        height: 400px;
+        overflow: auto;
+    }
+
+    .content::-webkit-scrollbar {
+        width: 5px;
+        height: 8px;
+    }
+
+    .content::-webkit-scrollbar-track {
+        background: #f0f0f0;
+        border-radius: 20px;
+    }
+
+    .content::-webkit-scrollbar-thumb {
+        background-color: #05a2c2;
+        border-radius: 20px;
+        background-image: -webkit-linear-gradient(45deg,
+                rgba(255, 255, 255, 0.4) 25%,
+                transparent 25%,
+                transparent 50%,
+                rgba(255, 255, 255, 0.4) 50%,
+                rgba(255, 255, 255, 0.4) 75%,
+                transparent 75%,
+                transparent);
+    }
+
+    .placeholder {
+        color: #c2c2c2;
+    }
+
+    .buttons {
+        text-align: center;
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid #f0f0f0;
+
+        &>* {
+            margin: 0px 5px;
+        }
+    }
+}
+
+:root,
+.hope-t-dFOaUu {
+    --hope-sizes-4: 15px;
+}
+
+.start {
+    position: fixed;
+    right: 15px;
+    bottom: 15px
+}
