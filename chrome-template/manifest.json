@@ -4,7 +4,7 @@
   "version": "1.0",
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
+      "matches": ["https://rp.mockplus.cn/*"],
       "js": ["create-form-table-config.user.js"]
     }
   ],
@@ -13,5 +13,5 @@
     "chrome_style": true
   },
   "omnibox": { "keyword": "go" },
-  "permissions": ["tabs", "https://rp.mockplus.cn/*"]
+  "permissions": ["tabs"]
 }

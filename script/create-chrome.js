@@ -40,7 +40,7 @@ const configTargetFileUrl = path.join(appPath, "./dist-chrome/create-form-table-
 let configTargetContent = readFileSync(configFileUrl, 'utf-8')
 const configCode = `if (document.location.hostname === "rp.mockplus.cn") { ${configTargetContent} }`
 // 将设置好的js文件写入文件夹内
-writeFileSync(configTargetFileUrl, configCode)
+writeFileSync(configTargetFileUrl, configTargetContent)
 
 console.log(`${chalk.green("创建成功")} ${chalk.bgBlue(` 版本号为 v${manifest.version} `)}`)
 console.log()
