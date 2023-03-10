@@ -16,9 +16,9 @@ export default function Index() {
   const nodeHandle = (el) => {
     let newList = list();
     newList.push({
+      label: el.innerText,
       name: "",
       component: "",
-      label: el.innerText,
       props: { placeholder: "" },
     });
     setList([...newList]);
