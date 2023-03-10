@@ -4,6 +4,7 @@ import { fileURLToPath } from 'url'
 import { cpSync, readFileSync, writeFileSync } from 'fs'
 
 const appPath = path.join(fileURLToPath(import.meta.url), "../../");
+console.log()
 console.log(chalk.gray("开始创建chrome插件"))
 
 // 插件模板路径
@@ -41,4 +42,5 @@ const configCode = `if (document.location.hostname === "rp.mockplus.cn") { ${con
 // 将设置好的js文件写入文件夹内
 writeFileSync(configTargetFileUrl, configCode)
 
-console.log(chalk.green("配置设置成功，版本号为 v" + manifest.version))
+console.log(`${chalk.green("配置设置成功")} ${chalk.bgBlue(` 版本号为 v${manifest.version} `)}`)
+console.log()
