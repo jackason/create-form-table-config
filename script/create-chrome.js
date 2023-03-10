@@ -42,5 +42,5 @@ const configCode = `if (document.location.hostname === "rp.mockplus.cn") { ${con
 // 将设置好的js文件写入文件夹内
 writeFileSync(configTargetFileUrl, configCode)
 
-console.log(`${chalk.green("配置设置成功")} ${chalk.bgBlue(` 版本号为 v${manifest.version} `)}`)
+console.log(`${chalk.green("创建成功")} ${chalk.bgBlue(` 版本号为 v${manifest.version} `)}`)
 console.log()
