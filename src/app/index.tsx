@@ -115,7 +115,7 @@ export default function Index() {
     <div className={styles.warp}>
       {visible() ? (
         <div className={styles.box}>
-          <p className={styles.title}>生成模板</p>
+          <p className={styles.title}>生成config</p>
           <RadioGroup
             value={radioValue()}
             onChange={(e) => setRadioValue(e)}
@@ -129,7 +129,7 @@ export default function Index() {
               ))}
             </HStack>
           </RadioGroup>
-          <p className={styles.title}>模板内容</p>
+          <p className={styles.title}>config内容</p>
           <div className={styles.titleContent}>
             <p className={styles.placeholder}>请点击页面选择</p>
             <div className={styles.content}>{listDom}</div>
