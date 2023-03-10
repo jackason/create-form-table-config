@@ -2,7 +2,6 @@
   "name": "create-form-table-config",
   "manifest_version": 2,
   "version": "1.0",
-  "description": "mockplus小程序px转rpx",
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
