@@ -37,7 +37,7 @@ const configFileUrl = path.join(appPath, "./dist/create-form-table-config.user.j
 const configTargetFileUrl = path.join(appPath, "./dist-chrome/create-form-table-config.user.js")
 
 // 配置只能在指定网页下展示
-// let configTargetContent = readFileSync(configFileUrl, 'utf-8')
+let configTargetContent = readFileSync(configFileUrl, 'utf-8')
 // const configCode = `if (document.location.hostname === "rp.mockplus.cn") { ${configTargetContent} }`
 // 将设置好的js文件写入文件夹内
 writeFileSync(configTargetFileUrl, configTargetContent)
