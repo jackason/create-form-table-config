@@ -1,0 +1,27 @@
+{
+  "name": "create-form-table-config",
+  "manifest_version": 2,
+  "version": "0.4.0",
+  "description": "mockplus小程序px转rpx",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "create-form-table-config.user.js"
+      ]
+    }
+  ],
+  "options_ui": {
+    "page": "index.html",
+    "chrome_style": true
+  },
+  "omnibox": {
+    "keyword": "go"
+  },
+  "permissions": [
+    "tabs",
+    "https://rp.mockplus.cn/*"
+  ]
+}
